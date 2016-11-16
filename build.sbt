@@ -1,7 +1,10 @@
-val scala11 = "2.11.8"
-val scala12 = "2.12.0"
+val `scala_2.11` = "2.11.8"
 
-scalaVersion := scala11
+val `scala_2.12` = "2.12.0"
+
+scalaVersion := `scala_2.11`
+
+crossScalaVersions := Seq(`scala_2.11`, `scala_2.12`)
 
 organization := "pl.jozwik.demo"
 
@@ -9,8 +12,6 @@ name := "single"
 
 version := "1.0.0"
 
-
-crossScalaVersions := Seq(scala11, scala12)
 
 val `org.scalatest_scalatest` = "org.scalatest" %% "scalatest" % "3.0.1" % "test"
 
