@@ -10,8 +10,6 @@ organization := "pl.jozwik.demo"
 
 name := "single"
 
-version := "1.0.0"
-
 scalacOptions ++= Seq(
   "-encoding", "utf8", // Option and arguments on same line
   "-Xfatal-warnings",  // New lines for each options
@@ -40,7 +38,8 @@ lazy val root = projectName("root", new File(".")).settings(
     `ch.qos.logback_logback-classic`
   ),
   packMain := Map("single" -> "pl.jozwik.demo.Main")
-).enablePlugins(PackPlugin)
+)
+    .enablePlugins(PackPlugin)
 
 def projectName(name: String, file: File): Project = Project(name, file).settings(
 )
