@@ -1,6 +1,6 @@
 val `scala_2.11` = "2.11.12"
 
-val `scala_2.12` = "2.12.7"
+val `scala_2.12` = "2.12.8"
 
 scalaVersion := `scala_2.12`
 
