@@ -2,7 +2,7 @@ package pl.jozwik.demo
 
 import com.typesafe.scalalogging.StrictLogging
 import org.scalatest._
-import org.scalatest.prop.Checkers
+import org.scalatestplus.scalacheck.Checkers
 
 trait AbstractSpecScalaCheck extends AbstractSpec with Checkers
 
